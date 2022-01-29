@@ -39,7 +39,7 @@ def show(i, excavator):
                 mask=np.logical_not(mask), square=True, ax=ax[i])
 
     if count == total:
-        sys.exit
+        sys.exit()
 
 
 def initialize():
@@ -60,7 +60,7 @@ def simulate(t):
 
 if __name__ == '__main__':
     ani = FuncAnimation(
-        fig, simulate, init_func=initialize, interval=200, repeat=False
+        fig, simulate, init_func=initialize, interval=200, frames=200, repeat=False
     )
 
     ani.save("simulation.gif", writer='imagemagick')
