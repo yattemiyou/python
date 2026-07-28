@@ -1,3 +1,18 @@
 {
-  "files.trimTrailingWhitespace": true
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "telemetry.telemetryLevel": "off",
+
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  }
 }
